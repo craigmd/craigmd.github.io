@@ -1,0 +1,235 @@
+@import "base/_variables";
+@import "base/_mixins";
+@import "base/_globals";
+
+.content-container {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 4vmin;
+}
+
+/* Header
+================================*/
+header {
+  background: $dark-gray;
+  height: 45px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.header-content {
+  @include flex(row, center, space-between);
+}
+
+.logo-date-container {
+  @include flex(row, center, flex-start);
+}
+
+.uxim-logo {
+  height: 15px;
+  width: auto;
+}
+
+.date {
+  display: none;
+}
+
+.attend {
+  background: $link-red;
+  color: $white;
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: lighter;
+  height: 100%;
+  padding: 12px 15px 0;
+  text-align: center;
+
+  @include hover-button;
+}
+
+/* Intro
+================================*/
+.intro {
+  background: $dark-gray;
+}
+
+.intro-content {
+  padding-top: 55px;
+  padding-bottom: 30px;
+}
+
+.talk-list-container {
+  color: $cream-text;
+}
+
+h1.intro-header {
+  color: $white;
+}
+
+.checkout-talks {
+  font-weight: bold;
+}
+
+.talk-list {
+  list-style: square;
+  margin-top: 0.8rem;
+  padding-left: 1.75rem;
+
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.aycl-pitch {
+  background: $white;
+  border: 1px solid #ddd;
+  margin: 40px 0 15px;
+  padding: 15px 22px;
+
+  p {
+    font-size: 1.125rem;
+  }
+
+  @include flex(column, center, center);
+}
+
+.aycl-price {
+  border-radius: 0.35rem;
+  background: $link-red;
+  color: $white;
+  font-size: 1.25rem;
+  margin: 10px 0 5px;
+  padding: 10px 20px;
+  text-align: center;
+  width: 100%;
+
+  @include hover-button;
+}
+
+/* Speakers
+================================*/
+.speakers {
+  margin-top: 40px;
+  padding-bottom: 20px;
+}
+
+.speaker {
+  height: 100%;
+  margin-bottom: 1.5rem;
+  @include flex(column, flex-start, flex-start);
+}
+
+.talk-info {
+  margin-bottom: 0.65rem;
+  width: 100%;
+  @include flex(row, flex-start, flex-start);
+}
+
+.speaker-picture {
+  border-radius: 0.25rem;
+  height: auto;
+  max-width: 125px;
+  width: 25%;
+}
+
+.title-author {
+  margin-left: 12px;
+  width: 70%;
+}
+
+.talk-title {
+  border-bottom: 1px solid $link-red;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  text-shadow: 0 3px $neutral-gray;
+
+  @include hover-link;
+}
+
+/* Footer
+================================*/
+footer {
+  background: $dark-gray;
+  color: $gray-footer-text;
+  font-size: 0.875rem;
+  line-height: 2;
+  padding: 25px 0;
+}
+
+.footer-content {
+  justify-content: space-between;
+}
+
+.site-info-container {
+  margin-bottom: 14px;
+
+  a {
+    color: $email-link;
+
+    @include hover-link;
+  }
+}
+
+.uie-logo {
+  display: block;
+  height: 64px;
+  margin: 1.5rem auto;
+  width: auto;
+}
+
+
+/* Media Query
+================================*/
+@media screen and (min-width: 660px) {
+  .uxim-logo {
+    height: 20px;
+    width: auto;
+  }
+
+  .date {
+    color: $cream-text;
+    display: flex;
+    font-size: 1.125rem;
+    font-weight: lighter;
+    margin-left: 12px;
+  }
+
+  .talk-list {
+    @include flex(row, top, space-between);
+
+    div {
+      width: 47%;
+    }
+  }
+
+  .aycl-pitch {
+    p {
+      width: 68%;
+    }
+
+    @include flex(row, center, space-between);
+  }
+
+  .aycl-price {
+    width: 27%;
+  }
+
+  .speaker-row {
+    @include flex(row, flex-start, space-between);
+  }
+
+  .speaker {
+    width: 47%;
+  }
+
+  .flex-wrapper-row {
+    @include flex(row, flex-start, space-between);
+  }
+
+  .site-info-container {
+    width: 47%;
+  }
+}
