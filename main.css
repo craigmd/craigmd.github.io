@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,900,300);
+
 *, ::before, ::after {
   box-sizing: border-box;
   margin: 0;
@@ -9,36 +11,7 @@ html {
 }
 
 body {
-  background: #5C5C6A;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Lato', sans-serif;
   height: 100vh;
   width: 100vw;
-}
-
-.container {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-}
-
-.version {
-  align-items: center;
-  background: #C56C76;
-  display: flex;
-  min-height: 100px;
-  justify-content: center;
-  min-width: 300px;
-}
-
-.version:first-child {
-  margin-right: 25px;
-}
-
-.version a {
-  color: #fff;
-  font-size: 2rem;
-  padding: 35px 75px;
-  text-decoration: none;
 }
