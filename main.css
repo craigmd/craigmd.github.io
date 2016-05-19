@@ -41,7 +41,7 @@ header {
   width: 100%;
 }
 
-.nav-container {
+nav {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -54,12 +54,12 @@ header {
   width: auto;
 }
 
-.nav {
+.site-links {
   display: flex;
   font-size: 1.25rem;
 }
 
-.nav li {
+.site-links li {
   margin-left: 40px;
 }
 
