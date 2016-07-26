@@ -1,124 +1,86 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,900);
-
 *, ::before, ::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html {
-  font-size: 100%;
-}
-
 body {
-  color: #0D254C;
-  font-family: 'Raleway', sans-serif;
-  height: 100vh;
-  width: 100vw;
+  background-color: #333;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  padding: 0 3vw;
 }
 
 a {
-  color: #C8102E;
+  color: #fff;
   text-decoration: none;
 }
 
-li {
+header {
+  padding: 20px 0;
+}
+
+ul {
   list-style: none;
 }
 
-h1 {
-  font-size: 2.5rem;
-  font-weight: 400;
+.logo {
+  align-items: center;
+  display: flex;
+  justify-content: center;
   margin-bottom: 20px;
 }
 
-header {
-  background: #FFF;
-  border-bottom: 2px solid #0D254C;
-  padding: 20px 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
+.logo:hover {
+  cursor: pointer;
 }
 
-nav {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  width: 960px;
-}
-
-.logo {
-  height: 60px;
+.logo img {
+  height: 50px;
   width: auto;
 }
 
-.site-links {
-  display: flex;
-  font-size: 1.25rem;
+.logo span {
+  font-size: 1.75rem;
+  font-weight: 700;
+  padding-left: 10px;
 }
 
-.site-links li {
-  margin-left: 40px;
+.nav li {
+  background-color: #ea262e;
+  margin-bottom: 5px;
+  text-align: center;
 }
 
-.main-content {
-  display: flex;
-  justify-content: space-between;
-  margin: 140px auto 0;
-  width: 960px;
+.nav a {
+  display: block;
+  padding: 15px 25px;
 }
 
-.articles {
-  width: 70%;
+@media (min-width: 568px) {
+  .nav-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav {
+    display: flex;
+  }
+
+  .nav li {
+    margin-right: 5px;
+  }
+
+  .nav li:last-child {
+    margin-right: 0;
+  }
 }
 
-article {
-  margin-bottom: 40px;
-}
-
-article img {
-  height: auto;
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-article p {
-  line-height: 1.5;
-  margin-bottom: 10px;
-}
-
-.tweets {
-  width: 25%;
-}
-
-.tweets h3 {
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-.tweet-container {
-  border: 1px solid #DBDCDD;
-  margin-bottom: 20px;
-  padding: 5px;
-}
-
-.tweeter {
-  align-items: flex-start;
-  display: flex;
-  margin-bottom: 10px;
-}
-
-.tweeter a {
-  margin-left: 10px;
-}
-
-.tweeter img {
-  height: auto;
-  width: 50px;
-}
-
-.tweet {
-  font-size: .8rem;
+@media (min-width: 768px) {
+  .nav-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
