@@ -1,0 +1,135 @@
+@import 'https://fonts.googleapis.com/css?family=Oswald:400,700|Source+Sans+Pro:400,400i,600,700,900';
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  color: #222;
+  font-family: 'Source Sans Pro', sans-serif;
+  width: 100vw;
+}
+
+section {
+  margin-bottom: 25px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 3vmin;
+  width: 100%;
+}
+
+p {
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Oswald', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*-------HEADER-------*/
+
+header {
+  background-color: #000;
+  color: #fff;
+  left: 0;
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-bar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.menu::after {
+  content: '\2630';
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
+/*-------POPOUT NAV-------*/
+.popout-nav {
+  background: #fff;
+  height: 100vh;
+  position: absolute;
+  right: -250px;
+  top: 0;
+  width: 250px;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.popout-nav ul {
+  list-style: none;
+}
+
+.popout-nav .exit img{
+  height: auto;
+  width: 40px;
+}
+
+.popout-nav li {
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.is-active {
+  transform: translateX(-250px);
+  transition: 0.5s;
+}
+
+/*-------INTRO-------*/
+
+.intro {
+  margin-top: 70px;
+}
+
+.intro .container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro img {
+  height: auto;
+  max-width: 452px;
+  width: 90vw;
+}
+
+.intro h1, .intro p {
+  margin-bottom: 20px;
+}
+
+.intro h3 {
+  margin-bottom: 10px;
+}
+
+.intro p:last-child {
+  margin-bottom: 0;
+}
