@@ -63,12 +63,12 @@ header {
   font-weight: 600;
 }
 
-.menu::before {
-  content: '\2630';
-  font-size: 1.5rem;
-  font-weight: 700;
-  padding-right: 10px;
+.menu img {
+  display: inline-block;
+  height: auto;
+  margin-right: 10px;
   vertical-align: middle;
+  width: 20px;
 }
 
 /*-------POPOUT NAV-------*/
