@@ -63,11 +63,11 @@ header {
   font-weight: 600;
 }
 
-.menu::after {
+.menu::before {
   content: '\2630';
   font-size: 1.5rem;
   font-weight: 700;
-  padding-left: 10px;
+  padding-right: 10px;
   vertical-align: middle;
 }
 
@@ -75,7 +75,7 @@ header {
 .popout-nav {
   background: #fff;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   right: -250px;
   top: 0;
   width: 250px;
@@ -87,7 +87,7 @@ header {
   list-style: none;
 }
 
-.popout-nav .exit img{
+.popout-nav .exit-button img {
   height: auto;
   width: 40px;
 }
