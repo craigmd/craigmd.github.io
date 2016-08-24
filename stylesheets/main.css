@@ -59,6 +59,7 @@ header {
 }
 
 .menu {
+  cursor: pointer;
   font-size: 1.25rem;
   font-weight: 600;
 }
@@ -88,6 +89,7 @@ header {
 }
 
 .popout-nav .exit-button img {
+  cursor: pointer;
   height: auto;
   width: 40px;
 }
@@ -132,4 +134,19 @@ header {
 
 .intro p:last-child {
   margin-bottom: 0;
+}
+
+/*-------CAROUSEL-------*/
+
+.images-container {
+  font-size: 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.images-container img {
+  display: inline-block;
+  height: 300px;
+  width: auto;
 }

@@ -1,4 +1,4 @@
-
+//Popout Menu
 const menu = document.getElementById('menu');
 
 let showNav = () => {
