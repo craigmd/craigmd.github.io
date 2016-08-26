@@ -40,101 +40,54 @@ a {
   text-decoration: none;
 }
 
-/*-------HEADER-------*/
-
-header {
-  background-color: #000;
-  color: #fff;
-  left: 0;
-  padding: 15px 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.nav-bar {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-}
-
-.menu {
-  cursor: pointer;
-  font-size: 1.25rem;
-  font-weight: 600;
-}
-
-.menu img {
-  display: inline-block;
-  height: auto;
-  margin-right: 10px;
-  vertical-align: middle;
-  width: 20px;
-}
-
-/*-------POPOUT NAV-------*/
-.popout-nav {
-  background: #fff;
-  height: 100vh;
-  position: fixed;
-  right: -250px;
-  top: 0;
-  width: 250px;
-  transition: 0.5s;
-  z-index: 10;
-}
-
-.popout-nav ul {
+ul {
   list-style: none;
 }
 
-.popout-nav .exit-button img {
-  cursor: pointer;
-  height: auto;
-  width: 40px;
+.green-bg {
+  background-color: #538D72;
+}
+.blue-bg {
+  background-color: #45679E;
+}
+.brown-bg {
+  background-color: #452C27;
+}
+.orange-bg {
+  background-color: #B74A29;
 }
 
-.popout-nav li {
-  font-size: 1.15rem;
-  font-weight: 700;
-  padding: 15px 0;
-  text-align: center;
+/*-------HEADER-------*/
+
+header {
+  background-image: url('../images/mosaic.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85.42vh;
+  width: 100vw;
 }
 
-.is-active {
-  transform: translateX(-250px);
-  transition: 0.5s;
-}
+/*-------NAV-------*/
 
-/*-------INTRO-------*/
 
-.intro {
-  margin-top: 70px;
-}
+/*-------POPOUT NAV-------*/
 
-.intro .container {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
 
-.intro img {
-  height: auto;
-  max-width: 452px;
-  width: 90vw;
-}
+/*-------PHILOSOPHY-------*/
 
-.intro h1, .intro p {
+.philosophy h1, .philosophy p {
   margin-bottom: 20px;
 }
 
-.intro h3 {
+.philosophy h3 {
   margin-bottom: 10px;
 }
 
-.intro p:last-child {
+.philosophy p:last-child {
   margin-bottom: 0;
 }
+
 
 /*-------CAROUSEL-------*/
 
