@@ -1,6 +1,6 @@
 //Popout Menu
 const menu = document.getElementById('menu');
-const exitButton = document.getElementById('exit');
+const navLinks = document.getElementsByClassName('popout-nav-link');
 
 let showNav = () => {
   const nav = document.getElementById('popout-nav');
@@ -12,5 +12,11 @@ let hideNav = () => {
   nav.classList.remove('is-active');
 }
 
+let addListeners = elements => {
+  for (let i=0; i<elements.length; i++) {
+    elements[i].addEventListener('click', hideNav, false);
+  }
+};
+
 menu.addEventListener('click', showNav, false);
-exitButton.addEventListener('click', hideNav, false);
+addListeners(navLinks);
