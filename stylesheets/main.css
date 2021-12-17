@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+@import 'https://fonts.googleapis.com/css2?family=Inspiration&display=swap';
 
 *,
 ::before,
@@ -13,6 +14,101 @@ html {
 }
 
 body {
+  background-attachment: fixed;
+  background-image: url('../images/snowflakes-bg.png'),
+    linear-gradient(to bottom, #138bf4 5%, #7ebef7 50%, #fff);
+  background-size: cover;
   font-family: 'Lato', sans-serif;
+  height: 100vh;
+  overflow: hidden;
   width: 100vw;
+}
+
+header {
+  height: 15%;
+  position: relative;
+  width: 100%;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+h1,
+h2 {
+  color: #fff;
+  font-family: 'Inspiration', cursive;
+  text-align: center;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.name {
+  color: #fff;
+  font-family: 'Inspiration', cursive;
+  font-size: 6rem;
+}
+
+.button {
+  appearance: none;
+  background: none;
+  border: none;
+  font-size: 1rem;
+}
+
+.next-section {
+  bottom: 5%;
+  color: #138bf4;
+  font-size: 20px;
+  left: 50%;
+  position: fixed;
+  transform: translateX(-50%);
+}
+
+.next-section img {
+  vertical-align: middle;
+  width: 20px;
+}
+
+.tease {
+  background-image: url('../images/winter-tease.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.cabin {
+  background-image: url('../images/cabin.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.sleigh {
+  background-image: url('../images/sleigh-ride.jpg');
+  background-size: cover;
+  background-position: left;
+}
+
+.reveal {
+  background-image: url('../images/reveal.png');
+  background-size: cover;
+  background-position: center;
 }
